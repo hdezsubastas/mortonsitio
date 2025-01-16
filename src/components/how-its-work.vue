@@ -5,7 +5,7 @@
                 <div :class="item.id === 3 ? '' : 'icon-features-wrap'">
                     <div class="middle-icon-large-features-box" :class="item.bg">
                         <span class="svg-icon text-success svg-icon-2hx">
-                            <img :src="item.image" alt="">
+                            <img :src="item.image" alt="" class="icon-participate">
                         </span>
                     </div>
                 </div>

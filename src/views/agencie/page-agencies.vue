@@ -11,7 +11,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
-                        <h2 class="ipt-title text-light">All Agency</h2>
+                        <h2 class="ipt-title text-light">Responsabilidad Social</h2>
                         <span class="ipn-subtitle">Lists of our all Popular agencies</span>
                     </div>
                 </div>

@@ -21,9 +21,9 @@ import p20 from '@/assets/img/p-20.jpg'
 import p21 from '@/assets/img/p-21.jpg'
 import p22 from '@/assets/img/p-22.jpg'
 
-import work1 from '@/assets/img/svg/work-1.svg'
-import work2 from '@/assets/img/svg/work-2.svg'
-import work3 from '@/assets/img/svg/work-3.svg'
+import work1 from '@/assets/img/svg/icon1.png'
+import work2 from '@/assets/img/svg/icon2.png'
+import work3 from '@/assets/img/svg/icon3.png'
 
 import c1 from '@/assets/img/c-1.png'
 import c2 from '@/assets/img/c-2.png'
@@ -77,7 +77,7 @@ import pr7 from '@/assets/img/partners/trivago-light.png'
 import pr8 from '@/assets/img/partners/visa-light.png'
 import pr9 from '@/assets/img/partners/columbia-light.png'
 
-import ag1 from '@/assets/img/ag-1.png'
+import ag1 from '@/assets/img/responsabilidad/afm.png'
 import ag2 from '@/assets/img/ag-2.png'
 import ag3 from '@/assets/img/ag-3.png'
 import ag4 from '@/assets/img/ag-4.png'
@@ -166,22 +166,22 @@ export const workData = [
     {
         id:1,
         image:work1,
-        title:'Evaluate Property',
-        desc:'Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline is taken specimens.',
+        title:'Elige tu forma de registro',
+        desc:'Puedes participar en la subasta asistiendo presencialmente sin necesidad de reserva, dejando ofertas telefónicas o en ausencia o pujando en línea a través de la pltaforma Morton.',
         bg:'f-light-success'
     },
     {
         id:2,
         image:work2,
-        title:'Meet Your Agent',
-        desc:'Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline is taken specimens.',
+        title:'Participa',
+        desc:'Durante la subasta, los lotes se presentan uno por uno, y los participantes pueden realizar sus ofertas en tiempo real, ya sea en el salón, por teléfono o en línea, hasta que se adjudique el lote al mejor postor.',
         bg:'f-light-warning'
     },
     {
         id:3,
         image:work3,
-        title:'Close The Deal',
-        desc:'Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline is taken specimens.',
+        title:'Recoge tus piezas',
+        desc:'Después de la subasta, recibirá un estado de cuenta con los detalles para recoger sus piezas o cotizar envíos a través de nuestros socios logísticos; si no adquiere ningún lote, su depósito en garantía será reembolsado sin costo.',
         bg:'f-light-purple'
     },
 ]
