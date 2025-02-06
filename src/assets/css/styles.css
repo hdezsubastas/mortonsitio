@@ -5915,6 +5915,19 @@ span.tag_t {
     background-image:url('../img/banners/paris.jpg');
 }
 
+.calendar-page-title{
+    width: 100%;
+    height: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    background-image:url('../img/banners/calendar-section.jpg');
+}
+
 .footer-texts{
     color:black;
 }

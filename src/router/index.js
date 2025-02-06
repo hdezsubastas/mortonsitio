@@ -65,6 +65,8 @@ import ComoComprarView from '@/views/como-comprar.vue'
 import cdmxPage from '@/views/sucursales/cdmx-page.vue'
 import parisPage from '@/views/sucursales/paris-page.vue'
 import FaqsPage from '@/views/faqs-page.vue'
+import SingleAuctionPage from '@/views/auctions/single-auction.vue'
+import HistoryPage from '@/views/history-page.vue'
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -88,6 +90,8 @@ const routes = [
   {path: '/arte-moderno', component: ModernView},
   {path: '/video', component: IndexVideo},
   {path: '/faqs', component: FaqsPage},
+  {path: '/subasta', component: SingleAuctionPage},
+  {path: '/historia', component: HistoryPage},
   {path: '/map', component: IndexMap},
   {path: '/agents', component: PageAgents},
   {path: '/agent-page', component: AgentPage},

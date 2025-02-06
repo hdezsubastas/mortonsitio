@@ -6,7 +6,6 @@
             <div class="featured_slick_padd"><router-link to="" class="mfp-gallery"><img :src="bg3" class="img-fluid mx-auto" alt="" /></router-link></div>
             <div class="featured_slick_padd"><router-link to="" class="mfp-gallery"><img :src="bg4" class="img-fluid mx-auto" alt="" /></router-link></div>
         </div>
-        <router-link to="" class="btn-view-pic">View photos</router-link>
     </div>
 </template>
 

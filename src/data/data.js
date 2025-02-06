@@ -1,8 +1,8 @@
 import pa1 from '@/assets/img/carlos_millan.jpg'
 
 import p1 from '@/assets/img/mini_1184.jpg'
-import p2 from '@/assets/img/p-2.jpg'
-import p3 from '@/assets/img/p-3.jpg'
+import p2 from '@/assets/img/subasta1.jpg'
+import p3 from '@/assets/img/subasta2.jpg'
 import p4 from '@/assets/img/p-4.jpg'
 import p5 from '@/assets/img/p-5.jpg'
 import p6 from '@/assets/img/p-6.jpg'
@@ -215,8 +215,10 @@ export const propertyData = [
         tag:['Verified'],
         tag2:'For Rent',
         type:'Apartment',
-        name:'The Green Canton Chrysler',
-        loction:'210 Zirak Road, Canada',
+        name:'Subasta de Antiguedades y Libros',
+        date:'Sabado 11 de Febrero 17:00',
+        loction:'Andromaco #84-B',
+        desc:'Las Subastas de los Sábados en Morton son la oportunidad perfecta para descubrir y adquirir piezas únicas a precios accesibles. ...',
         size:'3BHK',
         beds:'3 Beds',
         sqft:'1800 SQFT',
@@ -228,8 +230,10 @@ export const propertyData = [
         tag:['SuperAgent'],
         tag2:'For Sell',
         type:'House',
-        name:'Purple Flatiron House',
+        name:'Subasta de los Sabados 1273',
+        date:'Sabado 11 de Febrero 17:00 ',
         loction:'210 Zirak Road, Canada',
+        desc:'Las Subastas de los Sábados en Morton son la oportunidad perfecta para descubrir y adquirir piezas únicas a precios accesibles. ...',
         size:'3BHK',
         beds:'3 Beds',
         sqft:'1800 SQFT',
@@ -241,8 +245,10 @@ export const propertyData = [
         tag:['Verified','New'],
         tag2:'For Rent',
         type:'Building',
-        name:'The Green Canton Chrysler',
+        name:'Subasta especial de artistas mexicanos',
         loction:'210 Zirak Road, Canada',
+        date:'Sabado 11 de Febrero 17:00',
+        desc:'Las Subastas de los Sábados en Morton son la oportunidad perfecta para descubrir y adquirir piezas únicas a precios accesibles. ...',
         size:'3BHK',
         beds:'3 Beds',
         sqft:'1800 SQFT',
