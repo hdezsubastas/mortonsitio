@@ -2,7 +2,7 @@
     <div id="main-wrapper">
         <NavbarDark/>
 
-        <section class="bg-primary position-relative">
+        <section class="bg-primary position-relative page-responsability-title">
             <div class="position-absolute start-0 top-0 w-25 h-15 bg-light rounded-end-pill opacity-25 mt-4"></div>
             <div class="position-absolute start-0 bottom-0 w-15 h-20 bg-light rounded-top-pill opacity-25 ms-4"></div>
             <div class="position-absolute end-0 top-0 w-15 h-25 bg-light rounded-bottom-pill opacity-25 me-4"></div>
@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <h2 class="ipt-title text-light">Responsabilidad Social</h2>
-                        <span class="ipn-subtitle">Lists of our all Popular agencies</span>
+                        <span class="ipn-subtitle">En Morton Subastas somos congruentes con los valores que nos definen como una empresa responsable y dirigimos esfuerzos en beneficio del entorno social en el que participamos.</span>
                     </div>
                 </div>
             </div>
@@ -48,14 +48,23 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
         </section>
 
+        
+
         <section class="gray-simple">
             <div class="container">
+                <div class="social-contact">
+                    <p>Contacto</p>
+                    <span>Gabriela Molina Santander</span><br>
+                    <span>55 52833140 ext. 3159</span><br>
+                    <span>gmolina@mortonsubastas.com</span>
+                </div>
+               
                 <div class="row justify-content-center g-4">
                     <div v-for="(item, index) in agencyData" :key="index" class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="agents-grid card rounded-3 shadow">
@@ -67,28 +76,15 @@
                                 </div>
                                 <div class="fr-grid-deatil text-center">
                                     <div class="fr-grid-deatil-flex">
-                                        <div class="mb-1"><span class="label text-light bg-success">{{item.agent}}</span></div>
                                         <h5 class="fr-can-name mb-1 mt-2"><router-link :to="`/agency-page/${item.id}`">{{item.name}}</router-link></h5>
-                                        <span class="agent-property text-muted-2">{{item.property}}</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="fr-grid-info d-flex align-items-center justify-content-between px-4 py-4">
-                                <router-link :to="`/agency-page/${item.id}`" class="btn btn-light-primary full-width">View Agency<i class="fa-solid fa-arrow-right-long ms-2"></i></router-link>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
-                        <router-link to="/listings-list-with-sidebar" class="btn btn-primary px-lg-5 rounded">Explore More Agencies</router-link>
-                    </div>
-                </div>
             </div>	
         </section>
-
-        <FooterTop :bg="'theme-bg'"/>
 
         <FooterDark/>
 
@@ -98,7 +94,6 @@
 
 <script setup>
     import FooterDark from '@/components/footer/footer-dark.vue';
-    import FooterTop from '@/components/footer/footer-top.vue';
     import NavbarDark from '@/components/navbar/navbar-dark.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';
     import { agencyData } from '@/data/data';

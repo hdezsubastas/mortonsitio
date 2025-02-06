@@ -1,12 +1,12 @@
 <template>
     <div id="main-wrapper">
         <NavbarDark/>
-        <div class="page-title">
+        <div class="page-contact-title">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
-                        <h2 class="ipt-title">Contact Us</h2>
-                        <span class="ipn-subtitle">Lists of our all Popular agencies</span>
+                        <h2 class="ipt-title">Contactanos</h2>
+                        <span class="ipn-subtitle">Breve descripción de la sección</span>
                     </div>
                 </div>
             </div>
@@ -19,41 +19,41 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <label class="mb-1">Name</label>
+                                    <label class="mb-1">Nombre</label>
                                     <input type="text" class="form-control simple">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <label class="mb-1">Email</label>
+                                    <label class="mb-1">Correo</label>
                                     <input type="email" class="form-control simple">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="mb-1">Subject</label>
+                            <label class="mb-1">Asunto</label>
                             <input type="text" class="form-control simple">
                         </div>
                         <div class="form-group">
-                            <label class="mb-1">Message</label>
+                            <label class="mb-1">Menesaje</label>
                             <textarea class="form-control simple"></textarea>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary px-5 rounded" type="submit">Submit Request</button>
+                            <button class="btn btn-primary px-5 rounded" type="submit">Enviar</button>
                         </div>
                     </div>
                     
                     <div class="col-lg-5 col-md-5">
                         <div class="contact-info">
-                            <h2>Get In Touch</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <h2>Ponte en contacto</h2>
+                            <p>Breve descripción . </p>
                             
                             <div class="cn-info-detail mt-4">
                                 <div class="cn-info-icon">
                                     <i class="fa-solid fa-house"></i>
                                 </div>
                                 <div class="cn-info-content">
-                                    <h4 class="cn-info-title">Reach Us</h4>2512, New Market,<br>Eliza Road, Sincher 80 CA,<br>Canada, USA</div>
+                                    <h4 class="cn-info-title">Localizanos</h4>2512, New Market,<br>Eliza Road, Sincher 80 CA,<br>Canada, USA</div>
                             </div>
                             
                             <div class="cn-info-detail">

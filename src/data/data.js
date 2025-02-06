@@ -1,4 +1,6 @@
-import p1 from '@/assets/img/p-1.jpg'
+import pa1 from '@/assets/img/carlos_millan.jpg'
+
+import p1 from '@/assets/img/mini_1184.jpg'
 import p2 from '@/assets/img/p-2.jpg'
 import p3 from '@/assets/img/p-3.jpg'
 import p4 from '@/assets/img/p-4.jpg'
@@ -14,8 +16,8 @@ import p13 from '@/assets/img/p-13.jpg'
 import p14 from '@/assets/img/p-14.jpg'
 // import p15 from '@/assets/img/p-15.jpg'
 // import p16 from '@/assets/img/p-16.jpg'
-import p17 from '@/assets/img/p-17.jpg'
-import p18 from '@/assets/img/p-18.jpg'
+import p17 from '@/assets/img/mini_1184.jpg'
+import p18 from '@/assets/img/mini_1184.jpg'
 import p19 from '@/assets/img/p-19.jpg'
 import p20 from '@/assets/img/p-20.jpg'
 import p21 from '@/assets/img/p-21.jpg'
@@ -25,14 +27,10 @@ import work1 from '@/assets/img/svg/icon1.png'
 import work2 from '@/assets/img/svg/icon2.png'
 import work3 from '@/assets/img/svg/icon3.png'
 
-import c1 from '@/assets/img/c-1.png'
-import c2 from '@/assets/img/c-2.png'
-import c3 from '@/assets/img/c-3.png'
-import c4 from '@/assets/img/c-4.png'
-import c5 from '@/assets/img/c-5.png'
-import c6 from '@/assets/img/c-6.png'
-import c7 from '@/assets/img/c-7.png'
-import c8 from '@/assets/img/c-8.png'
+import c1 from '@/assets/img/Lote1.jpg'
+import c2 from '@/assets/img/Lote2.png'
+import c3 from '@/assets/img/Lote3.png'
+import c4 from '@/assets/img/lote4.png'
 
 import ct1 from '@/assets/img/ct-1.png'
 import ct2 from '@/assets/img/ct-2.png'
@@ -78,18 +76,42 @@ import pr8 from '@/assets/img/partners/visa-light.png'
 import pr9 from '@/assets/img/partners/columbia-light.png'
 
 import ag1 from '@/assets/img/responsabilidad/afm.png'
-import ag2 from '@/assets/img/ag-2.png'
-import ag3 from '@/assets/img/ag-3.png'
-import ag4 from '@/assets/img/ag-4.png'
-import ag5 from '@/assets/img/ag-5.png'
-import ag6 from '@/assets/img/ag-6.png'
-import ag7 from '@/assets/img/ag-7.png'
-import ag8 from '@/assets/img/ag-8.png'
+import ag2 from '@/assets/img/responsabilidad/artesmex.png'
+import ag3 from '@/assets/img/responsabilidad/difcuernavaca.png'
+import ag4 from '@/assets/img/responsabilidad/xolo.png'
+import ag5 from '@/assets/img/responsabilidad/diaspora.png'
+import ag6 from '@/assets/img/responsabilidad/appleseed.png'
+import ag7 from '@/assets/img/responsabilidad/savethechildren.png'
+import ag8 from '@/assets/img/responsabilidad/apoyaypunto.png'
+import ag9 from '@/assets/img/responsabilidad/apta.png'
+import ag10 from '@/assets/img/responsabilidad/elpenon.png'
+import ag11 from '@/assets/img/responsabilidad/montefalco.png'
+import ag12 from '@/assets/img/responsabilidad/ayudate.png'
+import ag13 from '@/assets/img/responsabilidad/vedimi.png'
+import ag14 from '@/assets/img/responsabilidad/kilo.png'
+import ag15 from '@/assets/img/responsabilidad/porche.png'
+import ag16 from '@/assets/img/responsabilidad/infinito.png'
+import ag17 from '@/assets/img/responsabilidad/juntoseducacion.png'
+import ag18 from '@/assets/img/responsabilidad/mexicovivo.png'
+import ag19 from '@/assets/img/responsabilidad/ajaraca.png'
+import ag20 from '@/assets/img/responsabilidad/nobrainer.png'
+import ag21 from '@/assets/img/responsabilidad/fundacionabc.png'
+import ag22 from '@/assets/img/responsabilidad/itam.png'
+import ag23 from '@/assets/img/responsabilidad/makeawish.png'
+import ag24 from '@/assets/img/responsabilidad/worldvision.png'
+import ag25 from '@/assets/img/responsabilidad/mexicraneos.png'
+import ag26 from '@/assets/img/responsabilidad/jgarcia.png'
+import ag27 from '@/assets/img/responsabilidad/museoarte.png'
+import ag28 from '@/assets/img/responsabilidad/surisrael.png'
+import ag29 from '@/assets/img/responsabilidad/fenomena.png'
+import ag30 from '@/assets/img/responsabilidad/amaras.png'
+import ag31 from '@/assets/img/responsabilidad/land.png'
+import ag32 from '@/assets/img/responsabilidad/simi.png'
 
-import team1 from '@/assets/img/team-1.jpg'
-import team2 from '@/assets/img/team-2.jpg'
-import team3 from '@/assets/img/team-3.jpg'
-import team4 from '@/assets/img/team-4.jpg'
+import team1 from '@/assets/img/responsabilidad/apta.png'
+import team2 from '@/assets/img/responsabilidad/elpenon.png'
+import team3 from '@/assets/img/responsabilidad/montefalco.png'
+import team4 from '@/assets/img/responsabilidad/ayudate.png'
 import team5 from '@/assets/img/team-5.jpg'
 import team6 from '@/assets/img/team-6.jpg'
 
@@ -309,44 +331,24 @@ export const propertyData = [
 export const bestLoction = [
     {
         image:c1,
-        location:'San Francisco, California',
-        properties:'95 Properties'
+        location:'Figura siglo XX',
+        properties:'Figura recolectada de Italia'
     },
     {
         image:c2,
-        location:'Dunao, California',
-        properties:'95 Properties'
+        location:'Pulsera de oro',
+        properties:'Oro 14 Kilates'
     },
     {
         image:c3,
-        location:'Liverpool, London',
-        properties:'95 Properties'
+        location:'Vinos españoles',
+        properties:'Vinos desde madrid españa'
     },
     {
         image:c4,
-        location:'San Francisco, New York',
-        properties:'95 Properties'
-    },
-    {
-        image:c5,
-        location:'New Orleans, Louisiana',
-        properties:'95 Properties'
-    },
-    {
-        image:c6,
-        location:'Los Angeles',
-        properties:'95 Properties'
-    },
-    {
-        image:c7,
-        location:'Dubai, UAE',
-        properties:'95 Properties'
-    },
-    {
-        image:c8,
-        location:'Dhaka, UAE',
-        properties:'95 Properties'
-    },
+        location:'Virgen Maria',
+        properties:'virgen Maria en oleo sobre tela'
+    }
 ]
 
 export const clientData = [
@@ -470,8 +472,8 @@ export const achievementData = [
 export const teamData = [
     {
         image:client1,
-        name:'James N. Green',
-        property:'117 Properties',
+        name:'David Collepardo',
+        property:'Especialista en Libros Religiosos',
         call:'1234567859',
         review:'42 Reviews'
     },
@@ -495,43 +497,25 @@ export const teamData = [
         property:'51 Properties',
         call:'1234567859',
         review:'28 Reviews'
-    },
+    }
+]
+
+export const parisTeam = [
     {
-        image:client5,
-        name:'Rudra K. Mathan',
-        property:'75 Properties',
-        call:'1234567859',
-        review:'52 Reviews'
-    },
-    {
-        image:client6,
-        name:'Niharika Muthurk',
-        property:'15 Properties',
-        call:'1234567859',
-        review:'46 Reviews'
-    },
-    {
-        image:client7,
-        name:'Grack Chappel',
-        property:'17 Properties',
-        call:'1234567859',
-        review:'102 Reviews'
-    },
-    {
-        image:client8,
-        name:'Nikita Rajaswi',
-        property:'62 Properties',
-        call:'1234567859',
-        review:'18 Reviews'
-    },
+        image: pa1,
+        name: 'Carlos Millan',
+        email: 'cmillan@mortonsubastas.com',
+        description: 'Titulaire d’un Master en Fine and Décorative Arts de l’Institut d’Art de Sotheby’s à Londres, j’ai auparavant obtenu la Licence d’Art, de Musique et du Spectacle (DAMS) de l’Université de Padoue en Italie, puis le diplôme de Consultant spécialiste du marché de l’art à Drouot Formation à Paris.'
+
+    }
 ]
 
 export const blogData = [
     {
         id:1,
         image:p17,
-        date:'13th Sept 2025',
-        title:'Why people choose listio for own properties',
+        date:'11 Febrero de 2025',
+        title:'Subasta de Antiguedades 1184',
         desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
     },
     {
@@ -976,28 +960,168 @@ export const agencyData = [
     },
     {
         id:9,
-        image:ag1,
+        image:ag9,
         agent:'3 Agents',
         name:'House Design',
         property:'31 Properties'
     },
     {
         id:10,
-        image:ag2,
+        image:ag10,
         agent:'2 Agents',
         name:'Jumil Estate',
         property:'25 Properties'
     },
     {
         id:11,
-        image:ag3,
+        image:ag11,
         agent:'5 Agents',
         name:'House Stock',
         property:'18 Properties'
     },
     {
         id:12,
-        image:ag4,
+        image:ag12,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:13,
+        image:ag13,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:14,
+        image:ag14,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:15,
+        image:ag15,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:16,
+        image:ag16,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:17,
+        image:ag17,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:18,
+        image:ag18,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:19,
+        image:ag19,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:20,
+        image:ag20,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:21,
+        image:ag21,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:22,
+        image:ag22,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:23,
+        image:ag23,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:24,
+        image:ag24,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:25,
+        image:ag25,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:26,
+        image:ag26,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:27,
+        image:ag27,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:28,
+        image:ag28,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:29,
+        image:ag29,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:30,
+        image:ag30,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:31,
+        image:ag31,
+        agent:'6 Agents',
+        name:'Ran Estate',
+        property:'63 Properties'
+    },
+    {
+        id:32,
+        image:ag32,
         agent:'6 Agents',
         name:'Ran Estate',
         property:'63 Properties'
@@ -1039,20 +1163,38 @@ export const teamTwo = [
 
 export const aboutData = [
     {
-        icon:'fa-solid fa-unlock-keyhole text-primary',
-        title:'Fully Secure & 24x7 Dedicated Support',
-        desc:'If you are an individual client, or just a business startup looking for good backlinks for your website.'
+        icon:'fa-solid fa-puzzle-piece text-primary',
+        title:'¿Que tipo de piezas aceptan?',
+        desc:'Antigüedades, joyería, libros y documentos, muebles, instrumentos musicales, platería, porcelana, cristalería, menajes de casa, taxidermia, esculturas, mobiliario, arte gráfico y decorativo, arte moderno, vinos, etc.'
     },
     {
-        icon:'fa-brands fa-twitter text-primary',
-        title:'Manage your Social & Busness Account Carefully',
-        desc:'If you are an individual client, or just a business startup looking for good backlinks for your website.'
+        icon:'fa-solid fa-receipt text-primary',
+        title:'¿Qué pasa si se vende mi pieza?',
+        desc:'Al día siguiente le llegará un correo con el resultado de la subasta: precio martillo y la información de la fecha de pago.'
     },
     {
-        icon:'fa-solid fa-layer-group text-primary',
-        title:'We are Very Hard Worker and loving',
-        desc:'If you are an individual client, or just a business startup looking for good backlinks for your website.'
+        icon:'fa-solid fa-circle-exclamation text-primary',
+        title:'¿Qué pasa si mi pieza no se vende?',
+        desc:'Puede retirar su lote o recontratar el servicio con un precio de salida más bajo.'
     },
+]
+
+export const comprarData = [
+    {
+        icon:'fa-solid fa-certificate text-primary',
+        title:'¿Como pagar la garantía?',
+        desc:'El depósito en garantía se hace a la casa de subastas con el fin de asegurar su participación en la subasta y es necesario para realizar la colocación de pujas en cualquier forma en que desee participar.'
+    },
+    {
+        icon:'fa-solid fa-warehouse text-primary',
+        title:'¿Cuándo y donde puedo recoger mi pieza?',
+        desc:'En su estado de cuenta, que usted recibirá después de la subasta, se detallarán los días y las direcciones en las que podrá realizar la recolección de sus piezas.'
+    },
+    {
+        icon:'fa-solid fa-truck-fast text-primary',
+        title:'¿Realizan envíos?',
+        desc:'Trabajamos en conjunto con Mail Boxes, con quien le podemos ayudar a cotizar el envío que necesite de las piezas adquiridas, así como con dos casas de mudanzas para envíos especializados.'
+    }
 ]
 
 export const blogCategories = [
@@ -1126,7 +1268,7 @@ export const faqData = [
 export const faq2 = [
     {
         id:1,
-        title:'May I Request For Refund?',
+        title:'¿Cuales son las formas de pago que ofrecen para pagar mi compra?',
         desc:`Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.`
     },
     {

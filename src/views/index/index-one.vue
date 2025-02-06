@@ -19,12 +19,14 @@
         </section>
         <div class="clearfix"></div>
 
+        <FooterTop :bg="'theme-bg'"/>
+
         <section class="bg-light">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="sec-heading center">
-                        <h2>PRÓXIMAS SUBASTAS</h2>
-                        <p>Explora nuestras próximas subastas</p>
+                        <h2>MÁS DE MORTON</h2>
+                        <p>Breve descripción de la sección pendiente</p>
                     </div>
                 </div>
                 <div class="row justify-content-center g-4">
@@ -39,17 +41,12 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-10 text-center">
                         <div class="sec-heading center">
-                            <h2>Find Best Locations</h2>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+                            <h2>TOP LOTS</h2>
+                            <p>Conoce algunos de nuestros lots más impresionantes</p>
                         </div>
                     </div>
                 </div>
                 <BestLocation/>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
-                        <router-link to="/listings-list-with-sidebar" class="btn btn-primary px-md-5 rounded">Browse More Locations</router-link>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -67,23 +64,6 @@
             </div>
         </section>
 
-        <section>
-            <div class="container">
-            
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-7 col-md-10 text-center">
-                        <div class="sec-heading center">
-                            <h2>See our packages</h2>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
-                        </div>
-                    </div>
-                </div>
-                
-               <PricingOne/>
-            </div>	
-        </section>
-
-       
         
         <FooterTop :bg="'theme-bg'"/>
         <FooterDark/>
@@ -104,7 +84,6 @@
     import HowItsWork from '@/components/how-its-work.vue';
     import BestLocation from '@/components/best-location.vue';
     import ClientOne from '@/components/client-one.vue';
-    import PricingOne from '@/components/pricing-one.vue';
     import FooterTop from '@/components/footer/footer-top.vue';
     import FooterDark from '@/components/footer/footer-dark.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';

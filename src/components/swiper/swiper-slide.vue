@@ -14,11 +14,10 @@
     :pagination="true"
     :modules="modules"
     >
-      <swiper-slide><img src="images/next/mini01.jpg"><div class="text-swiper">Prueba de texto1</div></swiper-slide>
-      <swiper-slide><img src="images/next/mini02.jpg"><div class="text-swiper">Prueba de texto1</div></swiper-slide>
-      <swiper-slide><img src="images/next/mini03.jpg"><div class="text-swiper">Prueba de texto1</div></swiper-slide>
-      <swiper-slide><img src="images/next/mini04.jpg"><div class="text-swiper">Prueba de texto1</div></swiper-slide>
-      <swiper-slide><img src="images/next/mini05.jpg"><div class="text-swiper">Prueba de texto1</div></swiper-slide>
+      <swiper-slide><img src="images/next/mini_bristol.jpg"><div class="text-swiper">Bristol</div></swiper-slide>
+      <swiper-slide><img src="images/next/mini_ayc.jpg"><div class="text-swiper">Autos y Camiones</div></swiper-slide>
+      <swiper-slide><img src="images/next/mini_mercado.jpg"><div class="text-swiper">Mercado de Pulgas</div></swiper-slide>
+      <swiper-slide><img src="images/next/mini_porcelana.jpg"><div class="text-swiper">Taller de Porcelana</div></swiper-slide>
     
     </swiper>
   </template>

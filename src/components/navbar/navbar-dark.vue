@@ -1,28 +1,25 @@
 <!-- eslint-disable no-mixed-spaces-and-tabs -->
 <template>
 	<div>
-		
 		<div class="topbar">
                 <div class="container">
                     <div class="separator"></div>
                     <div class="row">
-                        <div class="col col-sm-8">
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#fff!important;">
-								<ul class="navbar-nav  ms-auto">
-									<li :class="{active: ['/calendario','/vinos'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('about-page')" @mouseleave="handleMouseLeave('about-page')"><router-link to="" class="d-flex align-items-center first-nav">Acerca<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['about-page'] && activeMenu['about-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['about-page'] && activeMenu['about-page']['main'] ? 'auto' : 'none'}">
-											<li><router-link to="/antiguedades" :class="current === '/antiguedades' ? 'active' : ''">¿Cómo Participar?</router-link></li>
-											<li><router-link to="/arte-moderno" :class="current === '/arte-moderno' ? 'active' : ''">¿Cómo Vender?</router-link></li>                                    
-										</ul>   
-									</li>
-									<li class="first-nav"><router-link to="/" :class="current === '/calendario' ? 'active' : ''">Historia</router-link></li>
-								</ul>
-							</nav>
+                        <div class="col col-sm-12 topbar-col">
+							<div class="topbar-nav">
+								<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#fff!important;">
+									<ul class="navbar-nav">
+										<li class="first-nav"><router-link to="/como-vender" :class="current === '/como-vender' ? 'active' : ''">¿Cómo Vender?</router-link></li>
+										<li class="first-nav"><router-link to="/como-comprar" :class="current === '/como-comprar' ? 'active' : ''">¿Cómo Comprar?</router-link></li>
+										<li class="first-nav"><router-link to="/" :class="current === '/calendario' ? 'active' : ''">Historia</router-link></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="topbar-logos">
+								<img :src="mexLogo" class="flag-logo" >
+								<img :src="ukLogo" class="flag-logo" >
+							</div>
 						</div>
-                        <div class="col col-sm-4">
-                            <img :src="mexLogo" class="flag-logo" >
-							<img :src="ukLogo" class="flag-logo" >
-                        </div>
                     </div>
                 </div> <!-- end container -->
             </div>
@@ -30,7 +27,7 @@
 			<div class="container">
 				<nav id="navigation"  :class="windowWidth > 991 ? 'navigation navigation-landscape' : 'navigation navigation-portrait'">
 					<div class="nav-header">
-						<router-link to="" class="nav-brand text-logo" >
+						<router-link to="/" class="nav-brand text-logo" >
 							<span class="svg-icon text-primary svg-icon-2hx">
 								<img :src="logoMorton">
 							</span>
@@ -48,132 +45,26 @@
 											<li><router-link to="/antiguedades" :class="current === '/antiguedades' ? 'active' : ''">Antiguedades</router-link></li>
 											<li><router-link to="/arte-moderno" :class="current === '/arte-moderno' ? 'active' : ''">Arte Moderno</router-link></li>                                    
 											<li><router-link to="/joyeria" :class="current === '/joyeria' ? 'active' : ''">Joyería</router-link></li>                                    
-											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Vinos</router-link></li>                                    
+											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Vinos</router-link></li>   
+											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Subastas de los Sabados</router-link></li>  
+											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Autos y Camiones</router-link></li>                                   
 										</ul>
 									</li>
 								</ul>   
 							</li>
-
-							<!--<li><router-link to="/" :class="current === '/calendario' ? 'active' : ''">¿Cómo Funciona?</router-link></li>-->
-							<li class="li-text"><router-link to="/" :class="current === '/calendario' ? 'active' : ''">Sucursales</router-link></li>
+							<li :class="{active: ['/cdmx','/paris'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('branches-page')" @mouseleave="handleMouseLeave('branches-page')"><router-link to="" class="d-flex align-items-center li-text">Sucursales<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
+								<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['branches-page'] && activeMenu['branches-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['branches-page'] && activeMenu['branches-page']['main'] ? 'auto' : 'none'}">
+									<li><router-link to="/cdmx" :class="current === '/cdmx' ? 'active' : ''">CDMX</router-link></li>
+									<li><router-link to="/paris" :class="current === '/paris' ? 'active' : ''">París</router-link></li>
+								</ul>
+							</li>
 							<li class="li-text"><router-link to="/contact" :class="current === '/contact' ? 'active' : ''">Contacto</router-link></li>
-
-
-							
-							<!--<li :class="{active: ['/list-layout-new','/list-layout-new-3','/list-layout-new-2','/list-layout-with-map','/list-layout-full','/grid-layout-with-sidebar','/classical-layout-with-sidebar','/grid-layout-with-map','/grid','/classical-property','/list-layout-with-map','/grid-layout-with-map','/classical-layout-with-map','/half-map','/half-map-2'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('listing-page')" @mouseleave="handleMouseLeave('listing-page')"><router-link to="" class="d-flex align-items-center">Listings<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-								<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['listing-page'] && activeMenu['listing-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['listing-page'] && activeMenu['listing-page']['main'] ? 'auto' : 'none'}">
-
-									<li :class="{active: ['/list-layout-new','/list-layout-new-3','/list-layout-new-2','/list-layout-with-map','/list-layout-full'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('list-page')" @mouseleave="handleMouseLeave('list-page')"><router-link to="" class="d-flex align-items-center justify-content-between">List Layout<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['list-page'] && activeMenu['list-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['list-page'] && activeMenu['list-page']['main'] ? 'auto' : 'none'}">
-											<li><router-link to="/list-layout-new" :class="current === '/list-layout-new' ? 'active' : ''">List Layout Simple</router-link></li>
-											<li><router-link to="/list-layout-new-3" :class="current === '/list-layout-new-3' ? 'active' : ''">List Layout Modern</router-link></li>                                    
-											<li><router-link to="/list-layout-new-2" :class="current === '/list-layout-new-2' ? 'active' : ''">List Layout Advance</router-link></li>                                    
-											<li><router-link to="/list-layout-with-map" :class="current === '/list-layout-with-map' ? 'active' : ''">With Map</router-link></li>                                    
-											<li><router-link to="/list-layout-full" :class="current === '/list-layout-full' ? 'active' : ''">Full Width</router-link></li>
-										</ul>
-									</li>
-
-									<li :class="{active: ['/grid-layout-with-sidebar','/classical-layout-with-sidebar','/grid-layout-with-map','/grid','/classical-property',].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('map-page')" @mouseleave="handleMouseLeave('map-page')"><router-link to="" class="d-flex align-items-center justify-content-between">Grid Layout<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['map-page'] && activeMenu['map-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['map-page'] && activeMenu['map-page']['main'] ? 'auto' : 'none'}">
-											<li><router-link to="/grid-layout-with-sidebar" :class="current === '/grid-layout-with-sidebar' ? 'active' : ''">With Sidebar</router-link></li>                                    
-											<li><router-link to="/classical-layout-with-sidebar" :class="current === '/classical-layout-with-sidebar' ? 'active' : ''">Classical With Sidebar</router-link></li>                                    
-											<li><router-link to="/grid-layout-with-map" :class="current === '/grid-layout-with-map' ? 'active' : ''">With Map</router-link></li>                                    
-											<li><router-link to="/grid" :class="current === '/grid' ? 'active' : ''">Full Width</router-link></li>
-											<li><router-link to="/classical-property" :class="current === '/classical-property' ? 'active' : ''">Classical Full Width</router-link></li>	 
-										</ul>
-									</li>
-
-									<li :class="{active: ['/list-layout-with-map','/grid-layout-with-map','/classical-layout-with-map','/half-map','/half-map-2'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('grid-page')" @mouseleave="handleMouseLeave('grid-page')"><router-link to="" class="d-flex align-items-center justify-content-between">With Map Property<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['grid-page'] && activeMenu['grid-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['grid-page'] && activeMenu['grid-page']['main'] ? 'auto' : 'none'}">
-											<li><router-link to="/list-layout-with-map" :class="current === '/list-layout-with-map' ? 'active' : ''">List With Map</router-link></li>                                    
-											<li><router-link to="/grid-layout-with-map" :class="current === '/grid-layout-with-map' ? 'active' : ''">Grid With Map</router-link></li>                                    
-											<li><router-link to="/classical-layout-with-map" :class="current === '/classical-layout-with-map' ? 'active' : ''">Classical With Map</router-link></li>                                    
-											<li><router-link to="/half-map" :class="current === '/half-map' ? 'active' : ''">Half Map Search</router-link></li>
-											<li><router-link to="/half-map-2" :class="current === '/half-map-2' ? 'active' : ''">Half Map Search 02</router-link></li>												
-										</ul>
-									</li>
-								</ul>
-							</li>-->
-							
-							<!--<li :class="{active: ['/single-property-1','/single-property-2','/single-property-3','/single-property-4','/agencies','/agency-page','/agents','/agent-page','/add-agent','/edit-agent','/dashboard','/payment','/my-profile','/create-account','/checkout','/my-property','/bookmark-list','/change-password','/submit-property-dashboard','/submit-property','/compare-property'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('feature-page')" @mouseleave="handleMouseLeave('feature-page')"><router-link to="" class="d-flex align-items-center">Features<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-								<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['feature-page'] && activeMenu['feature-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['feature-page'] && activeMenu['feature-page']['main'] ? 'auto' : 'none'}">
-
-									<li :class="{active: ['/single-property-1','/single-property-2','/single-property-3','/single-property-4',].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('detail-page')" @mouseleave="handleMouseLeave('detail-page')"><router-link to="" class="d-flex align-items-center justify-content-between">Single Property<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['detail-page'] && activeMenu['detail-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['detail-page'] && activeMenu['detail-page']['main'] ? 'auto' : 'none'}">
-											<li><router-link to="/single-property-1" :class="current === '/single-property-1' ? 'active' : ''">Single Property 1</router-link></li>                                    
-											<li><router-link to="/single-property-2" :class="current === '/single-property-2' ? 'active' : ''">Single Property 2</router-link></li>                                    
-											<li><router-link to="/single-property-3" :class="current === '/single-property-3' ? 'active' : ''">Single Property 3</router-link></li> 
-											<li><router-link to="/single-property-4" :class="current === '/single-property-4' ? 'active' : ''">Single Property 4</router-link></li> 												
-										</ul>
-									</li>
-
-									<li :class="{active: ['/agencies','/agency-page'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('agencies-page')" @mouseleave="handleMouseLeave('agencies-page')"><router-link to="" class="d-flex align-items-center justify-content-between">Agencies<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['agencies-page'] && activeMenu['agencies-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['agencies-page'] && activeMenu['agencies-page']['main'] ? 'auto' : 'none'}">                                  
-											<li><router-link to="/agencies" :class="current === '/agencies' ? 'active' : ''">Agencies List</router-link></li>                                    
-											<li><router-link to="/agency-page" :class="current === '/agency-page' ? 'active' : ''">Agency Page</router-link></li> 
-										</ul>
-									</li>
-
-									<li :class="{active: ['/agents','/agent-page','/add-agent','/edit-agent',].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('agents-page')" @mouseleave="handleMouseLeave('agents-page')"><router-link to="" class="d-flex align-items-center justify-content-between">Agents<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['agents-page'] && activeMenu['agents-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['agents-page'] && activeMenu['agents-page']['main'] ? 'auto' : 'none'}">
-											<li><router-link to="/agents" :class="current === '/agents' ? 'active' : ''">Agents List</router-link></li>                                    
-											<li><router-link to="/agent-page" :class="current === '/agent-page' ? 'active' : ''">Agent Page</router-link></li>
-											<li><router-link to="/add-agent" :class="current === '/add-agent' ? 'active' : ''">Add Agent</router-link></li>
-											<li><router-link to="/edit-agent" :class="current === '/edit-agent' ? 'active' : ''">Edit Agent</router-link></li>
-										</ul>
-									</li>
-									<li :class="{active: ['/dashboard','/payment','/my-profile','/create-account','/checkout','/my-property','/bookmark-list','/change-password','/submit-property-dashboard'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('admin-page')" @mouseleave="handleMouseLeave('admin-page')"><router-link to="" class="d-flex align-items-center justify-content-between">My Account<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['admin-page'] && activeMenu['admin-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['admin-page'] && activeMenu['admin-page']['main'] ? 'auto' : 'none'}">
-											<li><router-link to="/dashboard" :class="current === '/dashboard' ? 'active' : ''">User Dashboard</router-link></li>
-											<li><router-link to="/payment" :class="current === '/payment' ? 'active' : ''">Payment Confirmation</router-link></li>
-											<li><router-link to="/my-profile" :class="current === '/my-profile' ? 'active' : ''">My Profile</router-link></li>                                    
-											<li><router-link to="/create-account" :class="current === '/create-account' ? 'active' : ''">Create Account</router-link></li>                                    
-											<li><router-link to="/checkout" :class="current === '/checkout' ? 'active' : ''">Checkout</router-link></li>                                    
-											<li><router-link to="/my-property" :class="current === '/my-property' ? 'active' : ''">Property List</router-link></li>                                    
-											<li><router-link to="/bookmark-list" :class="current === '/bookmark-list' ? 'active' : ''">Bookmarked Listings</router-link></li>                                    
-											<li><router-link to="/change-password" :class="current === '/change-password' ? 'active' : ''">Change Password</router-link></li> 
-											<li><router-link to="/submit-property-dashboard" :class="current === '/submit-property-dashboard' ? 'active' : ''">Submit Property Dashboard</router-link></li> 
-										</ul>
-									</li>
-									<li>
-										<router-link to="/compare-property" :class="current === '/compare-property' ? 'active' : ''">Compare Property</router-link>                                
-									</li>
-									<li>
-										<router-link to="/submit-property" :class="current === '/submit-property' ? 'active' : ''">Submit Property</router-link>                                
-									</li>
-								</ul>
-							</li> -->
-							
-							<!--<li :class="{active: ['/about-us','/blog','/blog-detail','/component','/pricing','/faq','/404','/contact'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('subPage-page')" @mouseleave="handleMouseLeave('subPage-page')"><router-link to="" class="d-flex align-items-center">Pages<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-								<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['subPage-page'] && activeMenu['subPage-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['subPage-page'] && activeMenu['subPage-page']['main'] ? 'auto' : 'none'}">
-									<li><router-link to="/about-us" :class="current === '/about-us' ? 'active' : ''">About Us</router-link></li>                                    
-									<li><router-link to="/blog" :class="current === '/blog' ? 'active' : ''">Blogs Page</router-link></li>                                    
-									<li><router-link to="/blog-detail" :class="current === '/blog-detail' ? 'active' : ''">Blog Detail</router-link></li>                                    
-									<li><router-link to="/component" :class="current === '/component' ? 'active' : ''">Shortcodes</router-link></li> 
-									<li><router-link to="/pricing" :class="current === '/pricing' ? 'active' : ''">Pricing</router-link></li>  
-									<li><router-link to="/faq" :class="current === '/faq' ? 'active' : ''">Faq</router-link></li>  
-									<li><router-link to="/404" :class="current === '/404' ? 'active' : ''">Error Page</router-link></li>
-									<li><router-link to="/contact" :class="current === '/contact' ? 'active' : ''">Contacts</router-link></li>
-								</ul>
-							</li>-->
 						</ul>
 						
 						<ul class="nav-menu nav-menu-social align-to-right">
 							<li class="add-listing">
 								<img :src="logoMiMorton" class="mimorton-logo" style="float:right;">
-
 							</li>
-							<!--<li>
-								<router-link to="#" class="text-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-									<span class="svg-icon svg-icon-2hx">
-										<svg width="24" height="24" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect y="6" width="16" height="3" rx="1.5" fill="currentColor"/>
-											<rect opacity="0.3" y="12" width="8" height="3" rx="1.5" fill="currentColor"/>
-											<rect opacity="0.3" width="12" height="3" rx="1.5" fill="currentColor"/>
-										</svg>
-									</span>
-								</router-link>
-							</li>-->
 						</ul>
 					</div>
 				</nav>

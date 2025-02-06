@@ -1,14 +1,14 @@
 <template>
-    <section class="call-to-act-wrap" :class="bg">
+    <section class="call-to-act-wrap">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="call-to-act">
                         <div class="call-to-act-head">
-                            <h3>Want to Become a Real Estate Agent?</h3>
-                            <span>We'll help you to grow your career and growth.</span>
+                            <h3>¿Quieres recibir nuestros catálogos impresos y digitales?</h3>
+                            <span>Suscribete a nuestro newsletter.</span>
                         </div>
-                        <router-link to="#" class="btn btn-call-to-act">SignUp Today</router-link>
+                        <router-link to="#" class="btn btn-call-to-act">Suscribirme</router-link>
                     </div>
                 </div>
             </div>

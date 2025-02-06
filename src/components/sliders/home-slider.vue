@@ -12,6 +12,9 @@
 
         <template #caption="captionProps">
             <FluxCaption v-bind="captionProps" />
+                <template>
+                    <h3>hola</h3>
+                </template>
         </template>
 
         <template #controls="controlsProps">
@@ -45,22 +48,17 @@
     } from 'vue-flux';
     import 'vue-flux/style.css';
 
-    /*const options = ref(['$500','$1000','$1500','2000','3000']);
-    const maxprice = ref(['$1000','$1500','$2000','3000','5000']);
-    const ptype = ref(['Rental','Villas','Offices','Condos','Studios']);
-    const rooms = ref(['1','2','3','4','5'])
-    const cities = ref([
-        'Los Angeles, CA','New York City, NY','Chicago, IL','Houston, TX','Philadelphia, PA','San Antonio, TX','San Jose, CA',
-    ])*/
-
     const $vueFlux = ref();
     const opciones = shallowReactive({
         autoplay: true,
     });
+
+   // const description = '<p>Subastas de los sabados></p>';
     const rscs = shallowReactive([
-        new Img('images/7.jpg', 'img 01'),
-        new Img('images/8.jpg', 'img 02'),
-        new Img('images/9.jpg', 'img 03'),
+        new Img('images/banners/banner_AM_1183.jpg', 'Subasta de los Sábados 1271 \n\rsábado 18 de enero, 11:00 a.m. Lago Andrómaco 84. \n\nUn encuentro donde el arte, las antigüedades, la joyería y los libros se entrelazan para contar historias fascinantes'),
+        new Img('images/banners/banner_JY_1182.jpg', 'Subasta de los Sábados 1271 \n\rsábado 18 de enero, 11:00 a.m. Lago Andrómaco 84.\n\n Un encuentro donde el arte, las antigüedades, la joyería y los libros se entrelazan para contar historias fascinantes'),
+        new Img('images/banners/banner_SB_1270.jpg', 'Subasta de los Sábados 1271 \n\rsábado 18 de enero, 11:00 a.m. Lago Andrómaco 84. \n\nUn encuentro donde el arte, las antigüedades, la joyería y los libros se entrelazan para contar historias fascinantes'),
+        new Img('images/banners/banner_SB_1272T.jpg', 'Subasta de los Sábados 1271 \n\rsábado 18 de enero, 11:00 a.m. Lago Andrómaco 84. \n\nUn encuentro donde el arte, las antigüedades, la joyería y los libros se entrelazan para contar historias fascinantes')
     ]);
     const transitions = shallowReactive([Fade, Book, Kenburn]);
 </script>

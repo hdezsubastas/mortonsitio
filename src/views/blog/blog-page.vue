@@ -24,6 +24,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center g-4">
+                    
                     <div v-for="(item, index) in blogData" :key="index" class="col-xl-4 col-lg-4 col-md-6">
                         <div class="blog-wrap-grid h-100 shadow">
                             <div class="blog-thumb">

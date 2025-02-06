@@ -1,4 +1,6 @@
 import AboutUs from '@/views/about-us.vue'
+import TermsPage from '@/views/terms-page.vue'
+import BranchesPage from '@/views/branches-page.vue'
 import BookmarkList from '@/views/admin/bookmark-list.vue'
 import ChangePassword from '@/views/admin/change-password.vue'
 import CheckoutPage from '@/views/admin/checkout-page.vue'
@@ -58,6 +60,11 @@ import JewelsView from '@/views/departments/page-jewels.vue'
 import ModernView from '@/views/departments/page-modern.vue'
 import WinesView from '@/views/departments/page-wines.vue'
 import CalendarView from '@/views/page-calendar.vue'
+import ComoVenderView from '@/views/como-vender.vue'
+import ComoComprarView from '@/views/como-comprar.vue'
+import cdmxPage from '@/views/sucursales/cdmx-page.vue'
+import parisPage from '@/views/sucursales/paris-page.vue'
+import FaqsPage from '@/views/faqs-page.vue'
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -76,22 +83,27 @@ const routes = [
   {path: '/antiguedades', component: AntiquesView},
   {path: '/joyeria', component: JewelsView},
   {path: '/vinos', component: WinesView},
+  {path: '/cdmx', component: cdmxPage},
   {path: '/calendario', component: CalendarView},
   {path: '/arte-moderno', component: ModernView},
   {path: '/video', component: IndexVideo},
+  {path: '/faqs', component: FaqsPage},
   {path: '/map', component: IndexMap},
   {path: '/agents', component: PageAgents},
   {path: '/agent-page', component: AgentPage},
   {path: '/agent-page/:id', component: AgentPage},
   {path: '/add-agent', component: AddAgent},
   {path: '/edit-agent', component: EditAgent},
-  {path: '/agencies', component: PageAgencies},
+  {path: '/responsabilidad-social', component: PageAgencies},
   {path: '/agency-page', component: AgencyPage},
   {path: '/agency-page/:id', component: AgencyPage},
   {path: '/compare-property', component: CompareProperty},
   {path: '/submit-property', component: SubmitProperty},
   {path: '/about-us', component: AboutUs},
   {path: '/blog', component: BlogPage},
+  {path: '/como-vender', component: ComoVenderView},
+  {path: '/como-comprar', component: ComoComprarView},
+  {path: '/paris', component: parisPage},
   {path: '/blog-detail', component: BlogDetail},
   {path: '/blog-detail/:id', component: BlogDetail},
   {path: '/component', component: ComponentPage},
@@ -130,6 +142,8 @@ const routes = [
   {path: '/single-property-3/:id', component:SingleProperty3},
   {path: '/single-property-4', component:SingleProperty4},
   {path: '/single-property-4/:id', component:SingleProperty4},
+  {path: '/sucursales/', component: BranchesPage},
+  {path: '/terminosyaviso/', component: TermsPage}
 ]
 
 const router = createRouter({

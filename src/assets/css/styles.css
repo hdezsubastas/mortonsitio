@@ -287,7 +287,7 @@ h5,
 h6 {
 	color:#0c2339;
 	font-weight:700;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	font-family: 'Jost', sans-serif;
 }
 
@@ -2754,9 +2754,8 @@ ul {
 }
 
 .flag-logo{
-    margin-top:12px;
-    float:right;
-    margin-left:20px;
+    margin-left: 5px;
+    width: 30px;
 }
 
 .nav-brand {
@@ -3841,7 +3840,7 @@ ul:last-child {
     max-width:100%;
 }
 .hero-search h1 {
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 	font-size:35px;
 }
 .hero-banner.dark-text h1, .hero-banner.dark-text p, .hero-banner.dark-text h1, .hero-banner.dark-text  p{
@@ -4220,7 +4219,7 @@ ul:last-child {
     border-radius: 4px;
     color: #ffffff;
     box-shadow: none;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 }
 .home-slider-container .modern-pro-wrap .property-type {
     background: #323d50;
@@ -4376,7 +4375,7 @@ h1.big-header-capt {
     margin: 0 auto;
     margin-bottom:0.4em;
     text-align: center;
-	text-transform:capitalize;
+	/*text-transform:capitalize;*/
 }
 .italian-search .input-with-icon .form-control,
 .italian-search .input-with-shadow .form-control,
@@ -5137,7 +5136,7 @@ span.hm_nav_clear {
     display: block;
     line-height:1.2;
     font-size: 14px;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     font-weight: 400;
     color: #72809D;
 }
@@ -5827,7 +5826,7 @@ span.tag_t {
 }
 .page-title {
     width: 100%;
-    height: 200px;
+    height: 400px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -5836,6 +5835,141 @@ span.tag_t {
     justify-content: center;
     background:#074da3;
 }
+
+.page-contact-title{
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image:url('../img/banners/contact-banner.jpg');
+}
+
+.page-responsability-title{
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    background-image:url('../img/banners/responsability-banner.jpg');
+}
+
+
+.page-responsability-title{
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    background-image:url('../img/banners/terms-banner.jpg');
+}
+
+
+.page-sell-title{
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    background-image:url('../img/banners/como-vender.jpg');
+}
+
+.cdmx-page-title{
+    width: 100%;
+    height: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    background-image:url('../img/banners/cdmx.jpg');
+}
+
+.paris-page-title{
+    width: 100%;
+    height: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    background-image:url('../img/banners/paris.jpg');
+}
+
+.footer-texts{
+    color:black;
+}
+
+.flux-caption .visible{
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+.vue-flux .flux-caption{
+    text-align: left;
+    margin-top: 60px;
+    white-space: pre-line;
+    background-color: #004D43!important;
+    padding: 18px!important;
+    line-height: 1.4rem!important;
+    font-size: 1.2rem!important;
+    margin-left: 10px;
+    margin-top:10px;
+}
+
+.h4-center{
+    text-align:center;
+}
+
+.ul-paris{
+    margin-bottom:25px!important;
+}
+
+.branches-location{
+    padding-bottom:10px!important;
+}
+
+.social-contact{
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.paris-specialist{
+    padding: 0px 11px 0px 11px;
+}
+
+.terms-li{
+    list-style:disc;
+}
+
+.terms-num-li{
+    list-style:auto;
+}
+
+.sell-num-li{
+    font-size:17px;
+    list-style:auto;
+}
+
 .page-title .ipt-title {
     color: #ffffff;
 }
@@ -8207,7 +8341,7 @@ h3.pa-name {
     display: block;
     overflow: hidden;
     letter-spacing: 0;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     font-size: 14px;
     line-height: 24px;
 }
@@ -8684,13 +8818,16 @@ table.property-table-wrap .property-container .title .table-property-price {
     padding: 2px 10px;
 }
 
-
+.flux-caption{
+    width:30%!important;
+}
 /*-------------------------------------------------
   Footer Start   
 --------------------------------------------------*/
 /*---------- Call To Action -------------------*/
 .call-to-act-wrap {
     padding: 50px 0;
+    background-color: #004D43;
 }
 .call-to-act {
     width: 100%;
@@ -11937,8 +12074,25 @@ th.next.available, .prev.available {
     border-bottom: 1px solid #ebebeb;
 }
 
+.topbar-col{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.topbar-nav{
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.topbar-logos{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .mimorton-logo{
-    width:80px;
+    width:70px;
 }
 
 .flux-image{
