@@ -34,7 +34,7 @@
             <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        ¿Cómo recibo el pago que vendí en subasta?
+                        ¿Cómo recibo el pago de el/los lotes que vendí en subasta?
                     </button>
                 </h2>
             </div>
@@ -42,6 +42,39 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="card-body">
                         <p>Si tiene alguna duda, favor de ponerse en contacto con Sonia López al teléfono 55 52 83 31 40 ext. 3396 o vía correo eletrónico a slopez@mortonsubastas.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-2">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        ¿Cuánto tiempo tengo para pagar una pieza ganada en subasta?
+                    </button>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Tienes un plazo de cinco días hábiles para realizar el pago después de la subasta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-2">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        ¿Cuál es la comisión del comprador?
+                    </button>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>La comisión en plataformas digitales es del 25% sobre el precio martillo. Si participas en presencia, en ausencia o en ofertas telefónicas, la comisión es del 22%.</p>
                     </div>
                 </div>
             </div>

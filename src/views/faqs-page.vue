@@ -27,9 +27,9 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="contact-box">
                             <i class="fa-solid fa-user-tie text-primary"></i>
-                            <h4>Contact Sales</h4>
-                            <p>sales@rikadahelp.co.uk</p>
-                            <span>+01 215 245 6258</span>
+                            <h4>Ventas</h4>
+                            <p>contacto@mortonsubastas.com</p>
+                            <span>+52 55 52 83 31 40</span>
                         </div>
                     </div>
                     
@@ -48,30 +48,34 @@
                         <div class="block-header border-0 m-0">
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <router-link class="nav-link active" id="general-tab" data-bs-toggle="pill" to="#general" role="tab" aria-controls="general" aria-selected="true">Subasta</router-link>
+                                    <router-link class="nav-link active" id="general-tab" data-bs-toggle="pill" to="#general" role="tab" aria-controls="general" aria-selected="true">General</router-link>
                                 </li>
-                                
+                                <li class="nav-item" role="presentation">
+                                    <router-link class="nav-link" id="auction-tab" data-bs-toggle="pill" to="#auction" role="tab" aria-controls="auction" aria-selected="true">Subasta</router-link>
+                                </li>
                                 <li class="nav-item" role="presentation">
                                     <router-link class="nav-link" id="payment-tab" data-bs-toggle="pill" to="#payment" role="tab" aria-controls="payment" aria-selected="false">Pagos</router-link>
                                 </li>
                                 
                                 <li class="nav-item" role="presentation">
-                                    <router-link class="nav-link" id="upgrade-tab" data-bs-toggle="pill" to="#upgrade" role="tab" aria-controls="upgrade" aria-selected="false">Upgrade</router-link>
+                                    <router-link class="nav-link" id="upgrade-tab" data-bs-toggle="pill" to="#upgrade" role="tab" aria-controls="upgrade" aria-selected="false">Piezas/Lotes</router-link>
                                 </li>
                             </ul>
                         </div>
                         
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
-                                <AuctionFaq :data="faqData"/>
+                                <GeneralFaq/>
                             </div>
-                            
+                            <div class="tab-pane fade" id="auction" role="tabpanel" aria-labelledby="auction-tab">
+                                <AuctionFaq/>
+                            </div>
                             <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
-                                <PaymentsFaq :data="faq2"/>
+                                <PaymentsFaq/>
                             </div>
                             
                             <div class="tab-pane fade" id="upgrade" role="tabpanel" aria-labelledby="upgrade-tab">
-                                <FaqOne :data="faq3"/>
+                                <LotsFaq/>
                             </div>
                         </div>
                     </div>
@@ -87,12 +91,12 @@
 
 <script setup>
     import bg from '@/assets/img/faq-sec.jpg'
-    import FaqOne from '@/components/faq-one.vue';
     import FooterDark from '@/components/footer/footer-dark.vue';
     import FooterTop from '@/components/footer/footer-top.vue';
     import NavbarDark from '@/components/navbar/navbar-dark.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';
     import PaymentsFaq from '@/components/faqs/payments-faq.vue';
     import AuctionFaq from '@/components/faqs/auction-faq.vue';
-    import { faq2, faq3, faqData } from '@/data/data';
+    import LotsFaq from '@/components/faqs/lots-faq.vue';
+    import GeneralFaq from '@/components/faqs/general-faq.vue';
 </script>
