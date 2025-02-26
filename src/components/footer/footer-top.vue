@@ -5,7 +5,7 @@
                 <div class="col-lg-12">
                     <div class="call-to-act">
                         <div class="call-to-act-head">
-                            <h3>¿Quieres recibir nuestros catálogos impresos y digitales?</h3>
+                            <h3>¿Quieres recibir nuestros catálogos digitales?</h3>
                             <span>Suscribete a nuestro newsletter.</span>
                         </div>
                         <router-link to="#" class="btn btn-call-to-act">Suscribirme</router-link>

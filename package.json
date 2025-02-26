@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vueform/multiselect": "^2.6.11",
+    "axios": "^1.7.9",
     "core-js": "^3.8.3",
     "jquery": "^3.7.1",
     "multi-range-slider-vue": "^1.1.4",

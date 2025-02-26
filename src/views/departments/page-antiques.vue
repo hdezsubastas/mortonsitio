@@ -90,6 +90,10 @@
             </div>
         </section>
 
+        <section>
+            <SwiperSpecialists/>
+        </section>
+
         
         <FooterDark/>
         <ScrollToTop/>
@@ -111,5 +115,6 @@ import ScrollToTop from '@/components/scroll-to-top.vue';
 import TeamOne from '@/components/team-one.vue';
 import SidebarOne from '@/components/sidebar-one.vue';
 import BannerOne from '@/components/banner-one.vue';
+import SwiperSpecialists from '@/components/swiper/swiper-specialists.vue';
 
 </script>

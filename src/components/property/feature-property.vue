@@ -24,7 +24,7 @@
                             <span class="listing-location text-muted-2"><i class="fa-solid fa-location-pin me-1"></i>{{item.loction}}</span>
                         </div>
                         <div class="listing-detail-btn">
-                            <router-link to="/single-property-2" class="btn btn-sm px-4 fw-medium btn-primary">Detalles</router-link>
+                            <router-link to="/single-property-2" class="btn btn-sm px-4 fw-medium  btn-details-morton">Detalles</router-link>
                         </div>
                     </div>
                 </div>

@@ -14,12 +14,12 @@
     :pagination="true"
     :modules="modules"
     >
-      <swiper-slide><img src="images/next/mini_bristol.jpg"><div class="text-swiper">Bristol</div></swiper-slide>
       <swiper-slide><img src="images/next/mini_ayc.jpg"><div class="text-swiper">Autos y Camiones</div></swiper-slide>
-      <swiper-slide><img src="images/next/mini_mercado.jpg"><div class="text-swiper">Mercado de Pulgas</div></swiper-slide>
+      <swiper-slide><img src="images/next/prestamos.png"><div class="text-swiper">Morton Prestamos</div></swiper-slide>
+      <swiper-slide><img src="images/next/mini_bristol.jpg"><div class="text-swiper">Bristol</div></swiper-slide>
       <swiper-slide><img src="images/next/mini_porcelana.jpg"><div class="text-swiper">Taller de Porcelana</div></swiper-slide>
-    
     </swiper>
+
   </template>
   <script>
     // Import Swiper Vue.js components
@@ -40,12 +40,12 @@
           console.log(swiper);
         };
         const onSlideChange = () => {
-          console.log('slide change');
+          //console.log('slide change');
         };
         return {
           onSwiper,
           onSlideChange,
-          modules: [EffectCoverflow, Pagination],
+          modules: [EffectCoverflow, Pagination]
         };
       },
     };

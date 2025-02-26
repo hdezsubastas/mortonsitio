@@ -13,12 +13,13 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <h2 class="ipt-title text-light">Ciudad de México</h2>
-                        <span class="ipn-subtitle">Contamos con 5 locaciones en la Ciudad.</span>
+                        <span class="ipn-subtitle">Contamos con 4 locaciones en la Ciudad.</span>
                     </div>
                 </div>
             </div>
             <div class="ht-30"></div>
         </section>
+        
 
         <section class="gray-simple branches-location">
             <div class="container">
@@ -115,41 +116,6 @@
                 </div>
             </div>
         </section>
-        
-        
-        <section class="gray-simple branches-location">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="agency agency-list overlio-40">
-                            <div class="agency-avatar">
-                                <img :src="athos165" alt="">
-                            </div>
-                            <div class="agency-content">
-                                <div class="agency-name">
-                                    <h4><i class="fa-solid fa-location-dot"></i>Andrómaco 84-B</h4>
-                                </div>
-                                <div class="agency-desc">
-                                    <ul class="dw-proprty-info">
-                                        <li><strong>Calle</strong>Andrómaco #84-B</li>
-                                        <li><strong>Colonia</strong>Nuevo Polanco</li>
-                                        <li><strong>Ciudad</strong>Ciudad de México</li>
-                                        <li><strong>Delegación</strong>Miguel Hidalgo</li>
-                                        <li><strong>Código Postal</strong>11529</li>
-                                        <li><strong>Teléfono</strong>+52 (55) 11 00 15 30</li>
-                                    </ul>
-                                </div>
-                                <div class="prt-detios" style="text-align: right;">
-                                    <span class="label text-light bg-success">Ver Mapa</span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         
         <section class="gray-simple branches-location">
             <div class="container">

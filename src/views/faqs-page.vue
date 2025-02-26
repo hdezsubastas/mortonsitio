@@ -27,18 +27,18 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="contact-box">
                             <i class="fa-solid fa-user-tie text-primary"></i>
-                            <h4>Ventas</h4>
-                            <p>contacto@mortonsubastas.com</p>
-                            <span>+52 55 52 83 31 40</span>
+                            <h4>Clientes Preferentes</h4>
+                            <p>smontesdeoca@mortonsubastas.com</p>
+                            <span></span>
                         </div>
                     </div>
                     
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="contact-box">
-                            <i class="fa-solid fa-comments text-primary"></i>
-                            <h4>Start Live Chat</h4>
-                            <span>+01 215 245 6258</span>
-                            <span class="live-chat">Live Chat</span>
+                            <i class="fa-solid fa-user-tie text-primary"></i>
+                            <h4>Atención Autos y Camiones</h4>
+                            <p>nmartinez@mortonsubastas.com</p>
+                            <span></span>
                         </div>
                     </div>
                 </div>

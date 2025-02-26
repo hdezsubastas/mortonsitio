@@ -74,7 +74,7 @@
             <div class="accordion-item">
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="card-body">
-                        <p>La comisión en plataformas digitales es del 25% sobre el precio martillo. Si participas en presencia, en ausencia o en ofertas telefónicas, la comisión es del 22%.</p>
+                        <p>Si participas en presencia, en ausencia o en ofertas telefónicas, la comisión es del 22%. La comisión en plataformas digitales es del 25% sobre el precio martillo. </p>
                     </div>
                 </div>
             </div>

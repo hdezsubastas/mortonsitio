@@ -2,19 +2,25 @@
 
     <NavbarDark/>
 
-    <section class="image-cover faq-sec text-center" :style="{ background: `#eff6ff url(${bg}) no-repeat`, backgroundSize: 'cover' }" data-overlay="6">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 position-relative z-1">
-                    <h1 class="text-light">Preguntas Frecuentes</h1>
+    <div id="main-wrapper">
+
+        <section class="image-cover faq-sec text-center" :style="{ background: `#eff6ff url(${bg}) no-repeat`, backgroundSize: 'cover' }" data-overlay="6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 position-relative z-1">
+                        <h1 class="text-light">Preguntas Frecuentes</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        
-    </section>
+        <section>
+            <div class="container">
+
+            </div>
+        </section>
+
+    </div>
 
     <FooterTop/>
     <FooterDark/>

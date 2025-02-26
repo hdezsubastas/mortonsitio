@@ -74,10 +74,6 @@
 </template>
 
 <script setup>
-   // import bg from '@/assets/img/bg-1.jpg'
-    //import pin from '@/assets/img/pin.svg'
-
-   // import Multiselect from '@vueform/multiselect';
     import '@vueform/multiselect/themes/default.css';
 
     import NavbarDark from '@/components/navbar/navbar-dark.vue';
@@ -89,13 +85,6 @@
     import ScrollToTop from '@/components/scroll-to-top.vue';
     import SwiperSlide from '@/components/swiper/swiper-slide.vue';
     import HomeSlider from '@/components/sliders/home-slider.vue';
-    /*const options = ref(['$500','$1000','$1500','2000','3000']);
-    const maxprice = ref(['$1000','$1500','$2000','3000','5000']);
-    const ptype = ref(['Rental','Villas','Offices','Condos','Studios']);
-    const rooms = ref(['1','2','3','4','5'])
-    const cities = ref([
-        'Los Angeles, CA','New York City, NY','Chicago, IL','Houston, TX','Philadelphia, PA','San Antonio, TX','San Jose, CA',
-    ])*/
 
    
 </script>

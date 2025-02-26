@@ -42,22 +42,17 @@
 									<li><router-link to="/calendario" :class="current === '/calendario' ? 'active' : ''">Calendario</router-link></li>                                    
 									<li :class="{active: ['/antiguedades','arte-moderno','/joyeria','/vinos'].includes(current),show: activeMenu['auction-page'] && activeMenu['auction-page']['main']}" @mouseenter="handleMouseEnter('auctions-page')" @mouseleave="handleMouseLeave('auctions-page')"><router-link to="" class="d-flex align-items-center justify-content-between">Departamentos<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
 										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['auctions-page'] && activeMenu['auctions-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['auctions-page'] && activeMenu['auctions-page']['main'] ? 'auto' : 'none'}">
-											<li><router-link to="/antiguedades" :class="current === '/antiguedades' ? 'active' : ''">Antiguedades</router-link></li>
-											<li><router-link to="/arte-moderno" :class="current === '/arte-moderno' ? 'active' : ''">Arte Moderno</router-link></li>                                    
-											<li><router-link to="/joyeria" :class="current === '/joyeria' ? 'active' : ''">Joyería</router-link></li>                                    
-											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Vinos</router-link></li>   
+											<li><router-link to="/antiguedades" :class="current === '/antiguedades' ? 'active' : ''">Antiguedades y Libros</router-link></li>
+											<li><router-link to="/arte-moderno" :class="current === '/arte-moderno' ? 'active' : ''">Arte Moderno y Contemporáneo</router-link></li>                                    
+											<li><router-link to="/joyeria" :class="current === '/joyeria' ? 'active' : ''">Joyería y Relojes</router-link></li>                                    
+											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Vinos y Destilados</router-link></li>   
 											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Subastas de los Sabados</router-link></li>  
 											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Autos y Camiones</router-link></li>                                   
 										</ul>
 									</li>
 								</ul>   
 							</li>
-							<li :class="{active: ['/cdmx','/paris'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('branches-page')" @mouseleave="handleMouseLeave('branches-page')"><router-link to="" class="d-flex align-items-center li-text">Sucursales<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
-								<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['branches-page'] && activeMenu['branches-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['branches-page'] && activeMenu['branches-page']['main'] ? 'auto' : 'none'}">
-									<li><router-link to="/cdmx" :class="current === '/cdmx' ? 'active' : ''">CDMX</router-link></li>
-									<li><router-link to="/paris" :class="current === '/paris' ? 'active' : ''">París</router-link></li>
-								</ul>
-							</li>
+							<li class="li-text"><router-link to="/cdmx" :class="current === '/cdmx' ? 'active' : ''">Ubicación</router-link></li>
 							<li class="li-text"><router-link to="/contact" :class="current === '/contact' ? 'active' : ''">Contacto</router-link></li>
 						</ul>
 						

@@ -34,6 +34,7 @@
 
 <script setup>
     import { ref, shallowReactive  } from 'vue';
+    import  Axios from 'axios';
     import {
         VueFlux,
         FluxCaption,
@@ -52,8 +53,18 @@
     const opciones = shallowReactive({
         autoplay: true,
     });
+   
+    const getData = async () => {
+        try {
+            const response = await  Axios.get('http://127.0.0.1/serverside/getAuctions.php');
+            return response;
+        } catch (error) {
+            alert(error);
+        } finally {
+            console.log("terminado ");
+        }
+    };
 
-   // const description = '<p>Subastas de los sabados></p>';
     const rscs = shallowReactive([
         new Img('images/banners/banner_AM_1183.jpg', 'Subasta de los Sábados 1271 \n\rsábado 18 de enero, 11:00 a.m. Lago Andrómaco 84. \n\nUn encuentro donde el arte, las antigüedades, la joyería y los libros se entrelazan para contar historias fascinantes'),
         new Img('images/banners/banner_JY_1182.jpg', 'Subasta de los Sábados 1271 \n\rsábado 18 de enero, 11:00 a.m. Lago Andrómaco 84.\n\n Un encuentro donde el arte, las antigüedades, la joyería y los libros se entrelazan para contar historias fascinantes'),
@@ -61,5 +72,9 @@
         new Img('images/banners/banner_SB_1272T.jpg', 'Subasta de los Sábados 1271 \n\rsábado 18 de enero, 11:00 a.m. Lago Andrómaco 84. \n\nUn encuentro donde el arte, las antigüedades, la joyería y los libros se entrelazan para contar historias fascinantes')
     ]);
     const transitions = shallowReactive([Fade, Book, Kenburn]);
+
+   const dataImg = getData();
+   console.log(dataImg);
+   
 </script>
 	

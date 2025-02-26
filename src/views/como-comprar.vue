@@ -87,7 +87,7 @@
                         <h3>En línea</h3>
                         <p>Puede participar en línea desde donde esté a través de la Plataforma Morton, en la que puede registrarse para participar, colocar su oferta con antelación y bien seguir la transmisión en vivo e ir haciendo sus pujas en vivo.</p>
                         <h3>¿Cuáles son las comisiones?</h3>
-                        <span>La comisión al comprar en subasta con nosotros es de 22% más I.V.A. sobre el precio final que alcance la pieza (precio martillo), si participa en línea la comisión es de 23% más I.V.A.</span>
+                        <span>La comisión al comprar en subasta con nosotros es de 22% más I.V.A. sobre el precio final que alcance la pieza (precio martillo), si participa en línea la comisión es de 25% más I.V.A.</span>
                     </div>
                 </div>
             </div>

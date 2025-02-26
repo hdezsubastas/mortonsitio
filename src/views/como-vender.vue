@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <div class="sec-heading center">
-                            <h2>Evaluamos tus piezas </h2>
+                            <h2>Valuamos tus piezas </h2>
                             <p>Morton subastas te da la seguridad que tus piezas están en buenas manos</p>
                         </div>
                     </div>
