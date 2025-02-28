@@ -132,6 +132,8 @@ i.req {
 * {
   outline: none; }
 
+
+
 body {
 	background: #ffffff;
 	color:#4e5c79;
@@ -203,6 +205,10 @@ section.min{
 }
 p {
     line-height:1.8;
+}
+
+.text-white-space{
+    white-space: pre-line;
 }
 	
 .gray-bg{
@@ -1488,7 +1494,7 @@ div[data-overlay] p{
 }
 /*-------------- Global Settings: Background Colors ----------------*/
 .bg-primary {
-  background-color:#074da3 !important;
+  background-color:#004D43 !important;
 }
 .bg-success {
   background-color:#009868 !important;
@@ -7569,10 +7575,11 @@ span.mod-close {
 }
 .sides-widget-header {
     position: relative;
-    display: flex;
-    padding: 1.5rem 1.4rem;
+    padding: 0.5rem 1.4rem;
     color: #ffffff;
     align-items: center;
+    text-align: center;
+
 }
 .sides-widget-details {
     padding-left: 20px;
@@ -7597,6 +7604,10 @@ span.mod-close {
 .sides-widget-header .agent-photo img {
     border-radius: 50%;
     max-width:60px;
+}
+
+.img-fluid-single{
+    height:300px;
 }
 
 .sides-widget-details span {
@@ -12102,6 +12113,41 @@ th.next.available, .prev.available {
 
 .mimorton-logo{
     width:70px;
+}
+
+.history-space{
+    padding-bottom:30px;
+}
+
+.btn-auction{
+    border: 2px solid #004d43;
+    font-family: inherit;
+    font-size: inherit;
+    color: #004d43;
+    width: 100%;
+    height:40px;
+    background: #fff;
+    cursor: pointer;
+    padding: 12px 20px;
+    outline: none;
+    font-size: 12px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-likes{
+    height:unset!important;
 }
 
 .flux-image{

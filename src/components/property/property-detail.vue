@@ -19,8 +19,10 @@
             </div>
             <div id="clTwo" class="panel-collapse collapse show">
                 <div class="block-body">
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Este mes de febrero, Morton Subastas se complace en ofrecerle una selecta colección de joyas y relojería fina, donde la estética y la funcionalidad se combinan de manera excepcional.</p>
+                    <p>Nuestra selección de joyas abarca una amplia variedad de diseños, desde piezas tradicionales hasta creaciones contemporáneas y de reconocidas firmas. Elaboradas con metales preciosos y engastadas con gemas naturales, tanto preciosas como semipreciosas, cada pieza destaca por su refinada manufactura y su capacidad de cautivar tanto la mente como el corazón.</p>
+                    <p>En cuanto a relojería, ponemos a su disposición extraordinarios ejemplares que no solo marcan el tiempo, sino que también reflejan estilo y distinción. Nuestra oferta incluye modelos casuales, formales y deportivos de prestigiosas marcas como Gerald Genta, Cartier, Rolex, Omega, Baume & Mercier, Bertolucci, Boucheron, Cvstos y Girard-Perregaux, así como relojes de bolsillo de las casas Henry Capt y Juvenia.</p>
+                    <p>Le invitamos a visitar nuestra exhibición previa a la subasta y aprovechar esta oportunidad única de adquirir piezas excepcionales.</p>
                 </div>
             </div>
         </div>

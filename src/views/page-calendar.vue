@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <FeatureProperty/>
+                <FeatureProperty :auctions="auctions"/>
             </div>		
         </section>
 
@@ -40,9 +40,31 @@
 </template>
 
 <script setup>
+    import {ref, onMounted} from 'vue'
+    import  Axios from 'axios';
     import NavbarDark from '@/components/navbar/navbar-dark.vue';
     import FooterTop from '@/components/footer/footer-top.vue';
     import FooterDark from '@/components/footer/footer-dark.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';
     import FeatureProperty from '@/components/property/feature-property.vue';
+
+    const auctions = ref(null);
+
+    onMounted(()=>{
+        getAuctions();
+    })
+
+    const getAuctions = async () => {
+        try{
+            const response = await  Axios.get('http://127.0.0.1/serverside/getNextAuctions.php');
+            console.log(response);
+            auctions.value = response.data; 
+            console.log(auctions);
+            
+        }catch(error){
+            console.log(error);
+        }finally{
+            console.log("listo");
+        }
+    }
 </script>
