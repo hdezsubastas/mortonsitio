@@ -121,7 +121,7 @@ import SidebarOne from '@/components/results-sidebar.vue';
 import BannerTwo from '@/components/banner-two.vue';
 import SwiperSpecialists from '@/components/swiper/swiper-specialists.vue';
 
-const dep = {dep:6, departamento:6};
+const dep = {dep:9, departamento:9};
 const results = ref(null);
 const auctions = ref(null);
 const size = ref(null);

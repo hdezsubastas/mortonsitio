@@ -2,7 +2,7 @@
     <div id="main-wrapper">
         <NavbarDark/>
        
-        <BannerOne />
+        <BannerTwo />
     
         <section>
             <div class="container">
@@ -23,26 +23,29 @@
         <section class="gray">
             <div class="row">
                 <div class="col-lg-8 col-md-12 col-sm-12">
-                    <div class="row justify-content-center g-4">
-                        <div v-for="(item, index) in blogData" :key="index" class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="row justify-content-center g-4" v-if="size>0">
+                        <div  v-for="(item, index) in auctions" :key="index" class="col-xl-4 col-lg-4 col-md-6">
                             <div class="blog-wrap-grid h-100 shadow">
                                 <div class="blog-thumb">
-                                    <router-link :to="`/blog-detail/${item.id}`"><img :src="item.image" class="img-fluid" alt="" /></router-link>
+                                    <router-link :to="`/subasta/${item.subasta_NumSub}`"><img :src="getImagePath(item.subWebBan_Img)" class="img-fluid" alt="" /></router-link>
                                 </div>
                                 <div class="blog-info">
-                                    <span class="post-date label bg-seegreen text-light"><i class="ti ti-calendar"></i>{{item.date}}</span>
+                                    <span class="post-date label bg-seegreen text-light"><i class="ti ti-calendar"></i>{{item.subWebInfo_FecMan}}</span>
                                 </div>
                                 <div class="blog-body">
-                                    <h4 class="bl-title"><router-link :to="`/blog-detail/${item.id}`">{{item.title}}</router-link></h4>
-                                    <p>{{item.desc}}</p>
-                                    <router-link :to="`/blog-detail/${item.id}`" class="text-primary fw-medium">Continue<i class="fa-solid fa-arrow-right ms-2"></i></router-link>
+                                    <h4 class="bl-title"><router-link :to="`/subasta/${item.subasta_NumSub}`">{{item.subasta_Nom}}</router-link></h4>
+                                    <p>{{item.subasta_Des.slice(0,100)}}</p>
+                                    <router-link :to="`/subasta/${item.subasta_NumSub}`" class="text-primary fw-medium">Ver Detalles<i class="fa-solid fa-arrow-right ms-2"></i></router-link>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row justify-content-center g-4" v-if="size==0">
+                        <p>Se estan preparando las próximas subastas</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12">
-                    <SidebarOne />
+                    <SidebarOne :res="results" />
                 </div>
             </div>
         </section>
@@ -94,7 +97,6 @@
             <SwiperSpecialists/>
         </section>
 
-        
         <FooterDark/>
         <ScrollToTop/>
     </div>
@@ -105,16 +107,56 @@
 
 
 import aboutImg2 from '@/assets/img/vec-2.png'
+import {ref,onMounted} from 'vue'
+import  Axios from 'axios';
 
-import { aboutData, blogData } from '@/data/data';
+import { aboutData } from '@/data/data';
 
 import NavbarDark from '@/components/navbar/navbar-dark.vue';
 import FooterTop from '@/components/footer/footer-top.vue';
 import FooterDark from '@/components/footer/footer-dark.vue';
 import ScrollToTop from '@/components/scroll-to-top.vue';
 import TeamOne from '@/components/team-one.vue';
-import SidebarOne from '@/components/sidebar-one.vue';
-import BannerOne from '@/components/banner-one.vue';
+import SidebarOne from '@/components/results-sidebar.vue';
+import BannerTwo from '@/components/banner-two.vue';
 import SwiperSpecialists from '@/components/swiper/swiper-specialists.vue';
+
+const dep = {dep:1, departamento:1};
+const results = ref(null);
+const auctions = ref(null);
+const size = ref(null);
+
+onMounted(()=>{
+    getResults();
+    getNextAuctions();
+})
+
+const getResults = async () => {
+    try{
+        const response = await  Axios.post('http://127.0.0.1/serverside/getResults.php', dep);
+        results.value = response.data.slice(0,5); 
+    }catch(error){
+        console.log(error);
+    }finally{
+        console.log("listo");
+    }
+}
+
+const getNextAuctions = async () => {
+    try{
+        const response = await  Axios.post('http://127.0.0.1/serverside/getDeptAuctions.php', dep);
+        auctions.value = response.data;
+        size.value = auctions.value.length;
+    }catch(error){
+        console.log(error);
+    }finally{
+        console.log("listo");
+    }
+}
+
+
+const getImagePath = (imageName) => {
+    return `/images/${imageName}`;
+}
 
 </script>

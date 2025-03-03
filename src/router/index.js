@@ -13,6 +13,7 @@ import PricingPage from '@/views/pricing-page.vue'
 import AntiquesView from '@/views/departments/page-antiques.vue'
 import JewelsView from '@/views/departments/page-jewels.vue'
 import ModernView from '@/views/departments/page-modern.vue'
+import SaturdaysView from '@/views/departments/page-saturdays.vue'
 import WinesView from '@/views/departments/page-wines.vue'
 import CalendarView from '@/views/page-calendar.vue'
 import ComoVenderView from '@/views/como-vender.vue'
@@ -33,6 +34,7 @@ const routes = [
   {path: '/cdmx', component: cdmxPage},
   {path: '/calendario', component: CalendarView},
   {path: '/arte-moderno', component: ModernView},
+  {path: '/sabados', component: SaturdaysView},
   {path: '/faqs', component: FaqsPage},
   {path: '/subasta/:sub', component: SingleAuctionPage},
   {path: '/historia', component: HistoryPage},
@@ -54,6 +56,7 @@ const routes = [
 ]
 
 const router = createRouter({
+  mode: history,
   history: createWebHistory(process.env.BASE_URL),
   routes
 })

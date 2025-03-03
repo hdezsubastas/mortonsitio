@@ -11822,7 +11822,7 @@ th.next.available, .prev.available {
     font-size: 15px;
     border-radius: 4px;
     text-decoration: none;
-    background:#074da3;
+    background:#004D43;
     color: #ffffff;
 }
 /* #back2Top:hover {
@@ -11944,14 +11944,14 @@ th.next.available, .prev.available {
 .home-slider .slick-next{
     right: 2% !important;
     top: 50% !important;
-    background: transparent !important;
+    background: #004D43 !important;
     border-radius: 4px !important;
     position: absolute;
 }
 .home-slider .slick-prev{
     left: 2% !important;
     top: 50% !important;
-    background: transparent !important;
+    background:  #004D43 !important;
     border-radius: 4px !important;
     position: absolute;
 }

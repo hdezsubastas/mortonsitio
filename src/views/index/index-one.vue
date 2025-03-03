@@ -50,7 +50,7 @@
             </div>
         </section>
 
-        <section class="gray">
+        <!--<section class="gray">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-10 text-center">
@@ -62,7 +62,7 @@
                 </div>
                <ClientOne/>
             </div>
-        </section>
+        </section>-->
 
         
         <FooterTop :bg="'theme-bg'"/>
@@ -79,7 +79,7 @@
     import NavbarDark from '@/components/navbar/navbar-dark.vue';
     import HowItsWork from '@/components/how-its-work.vue';
     import BestLocation from '@/components/best-location.vue';
-    import ClientOne from '@/components/client-one.vue';
+    //import ClientOne from '@/components/client-one.vue';
     import FooterTop from '@/components/footer/footer-top.vue';
     import FooterDark from '@/components/footer/footer-dark.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';

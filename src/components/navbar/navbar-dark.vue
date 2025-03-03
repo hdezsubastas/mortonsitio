@@ -11,7 +11,7 @@
 									<ul class="navbar-nav">
 										<li class="first-nav"><router-link to="/como-vender" :class="current === '/como-vender' ? 'active' : ''">¿Cómo Vender?</router-link></li>
 										<li class="first-nav"><router-link to="/como-comprar" :class="current === '/como-comprar' ? 'active' : ''">¿Cómo Comprar?</router-link></li>
-										<li class="first-nav"><router-link to="/" :class="current === '/calendario' ? 'active' : ''">Historia</router-link></li>
+										<li class="first-nav"><router-link to="/historia" :class="current === '/historia' ? 'active' : ''">Historia</router-link></li>
 									</ul>
 								</nav>
 							</div>
@@ -46,8 +46,8 @@
 											<li><router-link to="/arte-moderno" :class="current === '/arte-moderno' ? 'active' : ''">Arte Moderno y Contemporáneo</router-link></li>                                    
 											<li><router-link to="/joyeria" :class="current === '/joyeria' ? 'active' : ''">Joyería y Relojes</router-link></li>                                    
 											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Vinos y Destilados</router-link></li>   
-											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Subastas de los Sabados</router-link></li>  
-											<li><router-link to="/vinos" :class="current === '/vinos' ? 'active' : ''">Autos y Camiones</router-link></li>                                   
+											<li><router-link to="/sabados" :class="current === '/sabados' ? 'active' : ''">Subastas de los Sabados</router-link></li>  
+											<li><a href="https://mortonautosycamiones.com" target="_BLANK">Autos y Camiones</a></li>                                   
 										</ul>
 									</li>
 								</ul>   

@@ -53,7 +53,7 @@
                                 <div class="bb-video-box">
                                     <div class="bb-video-box-inner">
                                         <div class="bb-video-box-innerup">
-                                            <a href="https://www.youtube.com/watch?v=A8EI6JaFbv4" data-bs-toggle="modal" data-bs-target="#popup-video" class="text-primary"><i class="fa-solid fa-play"></i></a>
+                                            <a href="https://www.youtube.com/watch?v=A8EI6JaFbv4"  class="text-primary"><i class="fa-solid fa-play"></i></a>
                                         </div>
                                     </div>
                                 </div>

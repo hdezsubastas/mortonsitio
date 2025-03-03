@@ -84,7 +84,6 @@
     const getData = async () => {
         try {
             const response = await  Axios.post('http://127.0.0.1/serverside/getAuction.php', sub);
-            console.log(response);
             placeDate.value = response.data.subWebInfo_FecMan;  
             auctionName.value = response.data.subasta_Nom;
             totalLots.value = response.data.lotes_totales;
