@@ -17,7 +17,7 @@
 							</div>
 							<div class="topbar-logos">
 								<img :src="mexLogo" class="flag-logo" >
-								<img :src="ukLogo" class="flag-logo" >
+								<a href="http://localhost:8081"><img :src="ukLogo" class="flag-logo" ></a>
 							</div>
 						</div>
                     </div>
@@ -39,7 +39,8 @@
 						<ul class="nav-menu">
 							<li :class="{active: ['/calendario','/departamentos'].includes(current),show: activeMenu['index-page'] && activeMenu['index-page']['main']}" @mouseenter="handleMouseEnter('auction-page')" @mouseleave="handleMouseLeave('auction-page')"><router-link to="" class="d-flex align-items-center li-text">Subastas<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
 								<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['auction-page'] && activeMenu['auction-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['auction-page'] && activeMenu['auction-page']['main'] ? 'auto' : 'none'}">
-									<li><router-link to="/calendario" :class="current === '/calendario' ? 'active' : ''">Calendario</router-link></li>                                    
+									<li><router-link to="/calendario" :class="current === '/calendario' ? 'active' : ''">Calendario</router-link></li>    
+									<li><router-link to="/resultados" :class="current === '/resultados' ? 'active' : ''">Resultados</router-link></li>
 									<li :class="{active: ['/antiguedades','arte-moderno','/joyeria','/vinos'].includes(current),show: activeMenu['auction-page'] && activeMenu['auction-page']['main']}" @mouseenter="handleMouseEnter('auctions-page')" @mouseleave="handleMouseLeave('auctions-page')"><router-link to="" class="d-flex align-items-center justify-content-between">Departamentos<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
 										<ul class="nav-dropdown nav-submenu" :style="{display: activeMenu['auctions-page'] && activeMenu['auctions-page']['main'] ? 'block' : 'none', pointerEvents: activeMenu['auctions-page'] && activeMenu['auctions-page']['main'] ? 'auto' : 'none'}">
 											<li><router-link to="/antiguedades" :class="current === '/antiguedades' ? 'active' : ''">Antiguedades y Libros</router-link></li>

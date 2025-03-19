@@ -19,9 +19,21 @@
         </section>
         <div class="clearfix"></div>
 
-        <FooterTop :bg="'theme-bg'"/>
+        <section class="bg-light"> 
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 text-center">
+                        <div class="sec-heading center">
+                            <h2>TOP LOTS</h2>
+                            <p>Conoce algunos de nuestros lots más impresionantes</p>
+                        </div>
+                    </div>
+                </div>
+                <BestLocation/>
+            </div>
+        </section>
 
-        <section class="bg-light">
+        <section>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="sec-heading center">
@@ -36,19 +48,7 @@
             
         </section>
 
-        <section>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-7 col-md-10 text-center">
-                        <div class="sec-heading center">
-                            <h2>TOP LOTS</h2>
-                            <p>Conoce algunos de nuestros lots más impresionantes</p>
-                        </div>
-                    </div>
-                </div>
-                <BestLocation/>
-            </div>
-        </section>
+       
 
         <!--<section class="gray">
             <div class="container">
@@ -79,7 +79,6 @@
     import NavbarDark from '@/components/navbar/navbar-dark.vue';
     import HowItsWork from '@/components/how-its-work.vue';
     import BestLocation from '@/components/best-location.vue';
-    //import ClientOne from '@/components/client-one.vue';
     import FooterTop from '@/components/footer/footer-top.vue';
     import FooterDark from '@/components/footer/footer-dark.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';

@@ -5850,6 +5850,21 @@ span.tag_t {
     background-image:url('../img/banners/contact-banner.jpg');
 }
 
+.page-results-title{
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image:url('../img/banners/results.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 .page-responsability-title{
     width: 100%;
     height: 400px;
@@ -5988,6 +6003,12 @@ span.tag_t {
 .page-title .ipt-title {
     color: #ffffff;
 }
+
+.resultados-title {
+    color: white!important;
+}
+
+
 .ipn-subtitle {
     color:rgba(255,255,255,0.7);
 }

@@ -32,19 +32,6 @@ import c2 from '@/assets/img/Lote2.png'
 import c3 from '@/assets/img/Lote3.png'
 import c4 from '@/assets/img/lote4.png'
 
-import ct1 from '@/assets/img/ct-1.png'
-import ct2 from '@/assets/img/ct-2.png'
-import ct3 from '@/assets/img/ct-3.png'
-import ct4 from '@/assets/img/ct-4.png'
-import ct5 from '@/assets/img/ct-5.png'
-import ct6 from '@/assets/img/ct-6.png'
-import ct7 from '@/assets/img/ct-7.png'
-import ct8 from '@/assets/img/ct-8.png'
-import ct9 from '@/assets/img/ct-9.png'
-import ct10 from '@/assets/img/ct-10.png'
-import ct11 from '@/assets/img/ct-11.png'
-import ct12 from '@/assets/img/ct-12.png'
-import ct13 from '@/assets/img/ct-13.png'
 
 import client1 from '@/assets/img/user-1.jpg'
 import client2 from '@/assets/img/user-2.jpg'
@@ -55,25 +42,6 @@ import client6 from '@/assets/img/user-6.jpg'
 import client7 from '@/assets/img/user-7.jpg'
 import client8 from '@/assets/img/user-8.jpg'
 
-import pl1 from '@/assets/img/partners/booking.png'
-import pl2 from '@/assets/img/partners/columbia.png'
-import pl3 from '@/assets/img/partners/Payoneer.png'
-import pl4 from '@/assets/img/partners/Paypal.png'
-import pl5 from '@/assets/img/partners/razorpay.png'
-import pl6 from '@/assets/img/partners/microsoft.png'
-import pl7 from '@/assets/img/partners/trivago.png'
-import pl8 from '@/assets/img/partners/visa.png'
-import pl9 from '@/assets/img/partners/columbia.png'
-
-import pr1 from '@/assets/img/partners/booking-light.png'
-import pr2 from '@/assets/img/partners/columbia-light.png'
-import pr3 from '@/assets/img/partners/Payoneer-light.png'
-import pr4 from '@/assets/img/partners/Paypal-light.png'
-import pr5 from '@/assets/img/partners/razorpay-light.png'
-import pr6 from '@/assets/img/partners/microsoft-light.png'
-import pr7 from '@/assets/img/partners/trivago-light.png'
-import pr8 from '@/assets/img/partners/visa-light.png'
-import pr9 from '@/assets/img/partners/columbia-light.png'
 
 import ag1 from '@/assets/img/responsabilidad/afm.png'
 import ag2 from '@/assets/img/responsabilidad/artesmex.png'
@@ -115,11 +83,7 @@ import team4 from '@/assets/img/responsabilidad/ayudate.png'
 import team5 from '@/assets/img/team-5.jpg'
 import team6 from '@/assets/img/team-6.jpg'
 
-import tour1 from '@/assets/img/tour-1.jpg'
-import tour2 from '@/assets/img/tour-2.jpg'
-import tour3 from '@/assets/img/tour-3.jpg'
-import tour4 from '@/assets/img/tour-4.jpg'
-import tour5 from '@/assets/img/tour-5.jpg'
+
 
 
 
@@ -561,73 +525,7 @@ export const blogData = [
     },
 ]
 
-export const explorePlace = [
-    {
-        image:ct1,
-        loction:'Chikago',
-        property:'43 Properties'
-    },
-    {
-        image:ct2,
-        loction:'San Diego',
-        property:'35 Properties'
-    },
-    {
-        image:ct3,
-        loction:'San Francisco',
-        property:'42 Properties'
-    },
-    {
-        image:ct4,
-        loction:'Jacksonville',
-        property:'47 Properties'
-    },
-    {
-        image:ct5,
-        loction:'Virginia Beach',
-        property:'17 Properties'
-    },
-    {
-        image:ct6,
-        loction:'Philadelphia',
-        property:'37 Properties'
-    },
-    {
-        image:ct7,
-        loction:'Seattle',
-        property:'32 Properties'
-    },
-    {
-        image:ct8,
-        loction:'Houston',
-        property:'26 Properties'
-    },
-    {
-        image:ct9,
-        loction:'Los Angeles',
-        property:'18 Properties'
-    },
-    {
-        image:ct10,
-        loction:'Denver',
-        property:'12 Properties'
-    },
-    {
-        image:ct11,
-        loction:'Oklahoma City',
-        property:'22 Properties'
-    },
-    {
-        image:ct12,
-        loction:'Phoenix',
-        property:'15 Properties'
-    },
-    {
-        image:ct13,
-        loction:'New York',
-        property:'13 Properties'
-    },
-]
+
 
 export const propertyType = [
     {
@@ -692,12 +590,6 @@ export const propertyType = [
     },
 ]
 
-export const partnerLight = [
-    pl1,pl2,pl3,pl4,pl5,pl6,pl7,pl8,pl9
-]
-export const partner = [
-    pr1,pr2,pr3,pr4,pr5,pr6,pr7,pr8,pr9
-]
 
 export const categoriesData = [
     {
@@ -1226,33 +1118,7 @@ export const blogCategories = [
     },
 ]
 
-export const recentPost = [
-    {
-        image:tour1,
-        title:'Alonso Kelina Falao Asiano Pero',
-        time:'10 Min ago'
-    },
-    {
-        image:tour2,
-        title:'It is a long established fact that a reader',
-        time:'2 Hours ago'
-    },
-    {
-        image:tour3,
-        title:'Many desktop publish packages and web',
-        time:'4 Hours ago'
-    },
-    {
-        image:tour4,
-        title:'Various versions have evolved over the years',
-        time:'7 Hours ago'
-    },
-    {
-        image:tour5,
-        title:'Photo booth anim 8-bit PBR 3 wolf moon.',
-        time:'3 Days ago'
-    },
-]
+
 
 export const faqData = [
     {

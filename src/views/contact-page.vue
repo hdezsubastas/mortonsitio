@@ -6,7 +6,6 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <h2 class="ipt-title">Contactanos</h2>
-                        <span class="ipn-subtitle">Breve descripción de la sección</span>
                     </div>
                 </div>
             </div>
