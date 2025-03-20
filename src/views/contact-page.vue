@@ -34,7 +34,7 @@
                             <input type="text" class="form-control simple">
                         </div>
                         <div class="form-group">
-                            <label class="mb-1">Menesaje</label>
+                            <label class="mb-1">Mensaje</label>
                             <textarea class="form-control simple"></textarea>
                         </div>
                         <div class="form-group">
@@ -45,28 +45,27 @@
                     <div class="col-lg-5 col-md-5">
                         <div class="contact-info">
                             <h2>Ponte en contacto</h2>
-                            <p>Breve descripción . </p>
                             
                             <div class="cn-info-detail mt-4">
                                 <div class="cn-info-icon">
                                     <i class="fa-solid fa-house"></i>
                                 </div>
                                 <div class="cn-info-content">
-                                    <h4 class="cn-info-title">Localizanos</h4>2512, New Market,<br>Eliza Road, Sincher 80 CA,<br>Canada, USA</div>
+                                    <h4 class="cn-info-title">Localizanos</h4>Monte Athos #165<br>Lomas de Chapultepec<br>Miguel Hidalgo, CDMX</div>
                             </div>
                             
                             <div class="cn-info-detail">
                                 <div class="cn-info-icon">
                                     <i class="fa-solid fa-envelope-circle-check"></i>
                                 </div>
-                                <div class="cn-info-content"><h4 class="cn-info-title">Drop A Mail</h4>support@Rikada.com<br>Rikada@gmail.com</div>
+                                <div class="cn-info-content"><h4 class="cn-info-title">Correo electrónico</h4>atencion.clientes@mortonsubastas.com<br>smontesdeoca@mortonsubastas.com</div>
                             </div>
                             
                             <div class="cn-info-detail">
                                 <div class="cn-info-icon">
                                     <i class="fa-solid fa-phone-volume"></i>
                                 </div>
-                                <div class="cn-info-content"><h4 class="cn-info-title">Call Us</h4>(41) 123 521 458<br>+91 235 548 7548</div>
+                                <div class="cn-info-content"><h4 class="cn-info-title">Llamános</h4>(+52) 52 83 31 40 <br></div>
                             </div>
                         </div>
                     </div>

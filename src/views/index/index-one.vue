@@ -2,7 +2,7 @@
     <div id="main-wrapper">
 
         <NavbarDark/>
-        <HomeSlider/>
+        <SwiperHome/>
         
         <section>
             <div class="container">
@@ -47,23 +47,6 @@
             </div>
             
         </section>
-
-       
-
-        <!--<section class="gray">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-7 col-md-10 text-center">
-                        <div class="sec-heading center">
-                            <h2>Good Reviews by Customers</h2>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
-                        </div>
-                    </div>
-                </div>
-               <ClientOne/>
-            </div>
-        </section>-->
-
         
         <FooterTop :bg="'theme-bg'"/>
         <FooterDark/>
@@ -83,7 +66,7 @@
     import FooterDark from '@/components/footer/footer-dark.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';
     import SwiperSlide from '@/components/swiper/swiper-slide.vue';
-    import HomeSlider from '@/components/sliders/home-slider.vue';
+    import SwiperHome from '@/components/swiper/home-swiper.vue';
 
    
 </script>

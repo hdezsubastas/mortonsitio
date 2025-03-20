@@ -12212,6 +12212,24 @@ th.next.available, .prev.available {
     width: 100%;
   }
 
+  .swiper-slide2 {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .text-swiper{
     background-color: white;
     font-size: 20px;
