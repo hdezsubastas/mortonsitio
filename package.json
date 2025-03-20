@@ -1,7 +1,7 @@
 {
-  "name": "resido",
+  "name": "mortonsubastas",
   "version": "1.0.0",
-  "description": "Resido - Vue Js Real Estate Template",
+  "description": "Morton Subastas - Sitio Web",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
